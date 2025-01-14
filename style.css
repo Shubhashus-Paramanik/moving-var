@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+
+}
+.sky{
+    width: 100%;
+    height: 100vh;
+    background-size:cover ;
+    background-repeat: no-repeat;
+    background-image: url(img/nature2.jpg);
+    position: absolute;
+}
+.tree{
+    width: 800vw;
+background-repeat: repeat-x;
+display: flex;
+justify-content: space-around;
+position: relative;
+top: 170px;
+animation: wrateTrack linear 20s infinite;
+
+}
+.tree img{
+    width: 100px;
+    height: 200px;
+}
+.track{
+    background-image: url(img/track.png);
+     width: 80000vw;
+     height: 200px;
+     position: absolute;
+     top: 350px;
+     background-repeat: repeat-x;
+     animation: wrateTrack linear 8s infinite;
+}
+.car{
+    background-image: url(img/car-img.png);
+    width:400px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size:170px;
+    position: absolute;
+    top:297px;
+    left: 170px;
+    animation:moveCAr  linear 1s infinite;
+    
+}
+.while  #while1 {
+    position: absolute;
+    width: 40px;
+    top: 330.1px;
+    left:192.5px;
+    animation: wratatingWhile linear .4s infinite;
+ 
+}
+
+.while #while2 {
+    position: absolute;
+    width: 40px;
+    top: 330.1px;
+    left:281px;
+    animation: wratatingWhile linear .4s infinite;
+   
+}
+
+@keyframes wratatingWhile{
+    100%{
+        transform:rotate(360deg);
+    }
+}
+@keyframes wrateTrack{
+    100%{
+        transform:translateX(-500vw);
+    }
+}
+@keyframes moveCAr{
+    0%{
+        transform:translatey(1px);
+    }
+    50%{
+        transform:translatey(-2px);
+    }
+    100%{
+        transform:translatey(2px);
+    }
+}
+button{
+    position:absolute;
+    top: 500px;
+    left: 100px;
+    color: rgb(104, 38, 38);
+    cursor: pointer;
+
+}
